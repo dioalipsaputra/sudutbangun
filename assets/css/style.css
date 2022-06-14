@@ -8,8 +8,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Typewriter Condensed';
+  src: url('../font/typewcond_bold.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Hudson NY';
+  src: url('../font/Hudson NY.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'HAMBH';
+  src: url('../font/HAMBH.ttf') format("truetype");
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Typewriter Condensed", sans-serif;
   color: #444444;
 }
 
@@ -24,7 +39,11 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Dosis", sans-serif;
+  font-family: "Hudson NY", sans-serif;
+}
+
+.company {
+  font-family: "HAMBH", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -88,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -108,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Hudson NY", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #0f394c;
@@ -179,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #0f394c;
