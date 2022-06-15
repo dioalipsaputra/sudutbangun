@@ -9,22 +9,12 @@
 # General
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Typewriter Condensed';
-  src: url('../font/typewcond_bold.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'Hudson NY';
-  src: url('../font/Hudson NY.otf') format("truetype");
-}
-
-@font-face {
-  font-family: 'HAMBH';
-  src: url('../font/HAMBH.ttf') format("truetype");
+  font-family: 'Andale Mono';
+  src: url('../font/andale-mono.ttf') format("truetype");
 }
 
 body {
-  font-family: "Typewriter Condensed", sans-serif;
+  font-family: "Andale Mono", sans-serif;
   color: #444444;
 }
 
@@ -39,11 +29,12 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Hudson NY", sans-serif;
+  font-family: "Andale Mono", sans-serif;
 }
 
 .company {
-  font-family: "HAMBH", sans-serif;
+  font-family: "Andale Mono", sans-serif;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -94,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: "Andale Mono", sans-serif;
 }
 #header .logo a {
   color: #0f394c;
@@ -127,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Hudson NY", sans-serif;
+  font-family: "Andale Mono", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #0f394c;
@@ -312,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 #hero .btn-get-started {
-  font-family: "Dosis", sans-serif;
+  font-family: "Andale Mono", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -564,7 +555,7 @@ section {
   font-weight: 700;
   display: block;
   color: #49b5e7;
-  font-family: "Dosis", sans-serif;
+  font-family: "Andale Mono", sans-serif;
 }
 .counts .counters p {
   padding: 0;
@@ -1001,18 +992,61 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Gallery
+# calculation
 --------------------------------------------------------------*/
-.gallery .gallery-item {
+.calculation {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.calculation .calculation-img {
+  position: relative;
+  overflow: hidden;
+}
+.calculation .calculation-info {
+  padding: 25px 15px;
+}
+.calculation .calculation-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #0f394c;
+}
+.calculation .calculation-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+.calculation .calculation-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+.calculation .calculation-item {
   overflow: hidden;
   border-right: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
-.gallery .gallery-item img {
+.calculation .calculation-item img {
   transition: all ease-in-out 0.4s;
 }
-.gallery .gallery-item:hover img {
+.calculation .calculation-item:hover img {
   transform: scale(1.1);
+}
+.calculation .calculation-form button[type=submit] {
+  background: #49b5e7;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.calculation .calculation-form button[type=submit]:hover {
+  background: #1da2e0;
 }
 
 /*--------------------------------------------------------------
@@ -1155,7 +1189,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: "Andale Mono", sans-serif;
 }
 .breadcrumbs ol {
   display: flex;
@@ -1260,7 +1294,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Andale Mono", sans-serif;
   color: #777777;
 }
 #footer .footer-top h4 {
