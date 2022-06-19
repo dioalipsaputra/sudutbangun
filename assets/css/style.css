@@ -528,11 +528,52 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-wrap {
+.workflow .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.workflow .icon-box:hover {
+  transform: translateY(-5px);
+}
+.workflow .icon {
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 30px);
+}
+.workflow .icon img {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+.workflow .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.workflow .title a {
+  color: #111;
+}
+.workflow .icon-box:hover .title a {
+  color: #49b5e7;
+}
+.workflow .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.workflow .clients-wrap {
   border-top: 1px solid #eee;
   border-left: 1px solid #eee;
 }
-.clients .client-logo {
+.workflow .client-logo {
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -543,16 +584,16 @@ section {
   background: #fff;
   height: 120px;
 }
-.clients .client-logo img {
+.workflow .client-logo img {
   height: 50%;
   filter: grayscale(100%);
   transition: 0.3s;
 }
-.clients .client-logo:hover img {
+.workflow .client-logo:hover img {
   filter: none;
   transform: scale(1.2);
 }
-.clients img {
+.workflow img {
   transition: all 0.4s ease-in-out;
 }
 
@@ -987,7 +1028,7 @@ section {
 .calculation .calculation-item:hover img {
   transform: scale(1.1);
 }
-.calculation .calculation-form button[type=submit] {
+.calculation .calculation-form input[type=submit] {
   background: #49b5e7;
   border: 0;
   padding: 10px 24px;
@@ -995,7 +1036,7 @@ section {
   transition: 0.4s;
   border-radius: 4px;
 }
-.calculation .calculation-form button[type=submit]:hover {
+.calculation .calculation-form input[type=submit]:hover {
   background: #1da2e0;
 }
 

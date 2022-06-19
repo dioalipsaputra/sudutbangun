@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Sudut Bangun - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Butterfly - v4.7.0
-  * Template URL: https://bootstrapmade.com/butterfly-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
@@ -48,14 +32,13 @@
           <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
           <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Proyek</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
@@ -101,7 +84,6 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -112,7 +94,7 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Title</h3>
+            <h3>Tentang</h3>
             <p>Subtitle</p>
 
             <div class="icon-box">
@@ -138,7 +120,6 @@
 
       </div>
     </section><!-- End About Section -->
-
     <!-- ======= Team Section ======= -->
     <section class="team">
       <div class="container">
@@ -226,9 +207,8 @@
 
       </div>
     </section><!-- End Team Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- ======= WorkFlow Section ======= -->
+    <section id="workflow" class="workflow">
       <div class="container">
 
         <div class="section-title">
@@ -236,56 +216,32 @@
           <p>Subtitle</p>
         </div>
 
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="calculation" class="calculation">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Kalkulasi</h2>
-          <p>Subtitle</p>
-        </div>
-
-        <div class="row justify-content-center">
-
-          <div class="col-md-6">
-            <div class="calculation">
-              <div class="calculation-info">
-
-                <form class="calculation-form" action="index.html" method="post">
-                  <div>
-                    <h4>Panjang Rumah (meter)</h4>
-                    <input type="number" name="homeLong" class="form-control" id="homeLong" placeholder="1 s/d 99++ Meter" required>
-                  </div><br>
-                  <div>
-                    <h4>Lebar Rumah (meter)</h4>
-                    <input type="number" name="homeWide" class="form-control" id="homeWide" placeholder="1 s/d 99++ Meter" required>
-                  </div><br>
-                  <div>
-                    <h4>Jumlah Lantai</h4>
-                    <input type="number" name="numFloors" class="form-control" id="numFloors" placeholder="1 s/d 9++" required>
-                  </div><br>
-                  <div>
-                    <h4>Tipe</h4>
-                    <select class="form-control" name="homeType">
-                      <option>- Pilih -</option>
-                      <option value="premium">Premium</option>
-                      <option value="prestige">Prestige</option>
-                    </select>
-                  </div><br>
-                  <div class="text-center"><button type="submit">Hitung</button></div>
-                </form>
-              </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/workflow/measure.png"></div>
+              <h4 class="title"><a href="">Title </a><i class="bi bi-arrow-right-circle-fill"></i></h4>
+              <p class="description">Subtitle</p>
             </div>
           </div>
-
+          <div class="col-lg-4 col-md-4">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/workflow/checklist.png"></div>
+              <h4 class="title"><a href="">Title </a><i class="bi bi-arrow-right-circle-fill"></i></h4>
+              <p class="description">Subtitle</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/workflow/brickwall.png"></div>
+              <h4 class="title"><a href="">Title </a><i class="bi bi-arrow-right-circle-fill"></i></h4>
+              <p class="description">Subtitle</p>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
-
+    </section><!-- End Clients Section -->
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
@@ -321,7 +277,6 @@
 
       </div>
     </section><!-- End Counts Section -->
-
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container">
@@ -334,7 +289,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-cash-stack" style="color: #ff689b;"></i></div>
+              <div class="icon"><img></div>
               <h4 class="title"><a href="">Title</a></h4>
               <p class="description">Subtitle</p>
             </div>
@@ -380,7 +335,6 @@
 
       </div>
     </section><!-- End Services Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -533,18 +487,74 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+    <!-- ======= Gallery Section ======= -->
+    <section id="calculation" class="calculation section-bg">
+      <div class="container">
 
+        <div class="section-title">
+          <h2>Kalkulasi</h2>
+          <p>Subtitle</p>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6">
+            <div class="calculation">
+              <div class="calculation-info">
+
+                <form class="calculation-form" action="#calculation" method="POST">
+                  <div>
+                    <h4>Panjang Rumah (meter)</h4>
+                    <input type="number" name="homeLong" class="form-control" id="homeLong" placeholder="1 s/d 99++ Meter" required>
+                  </div><br>
+                  <div>
+                    <h4>Lebar Rumah (meter)</h4>
+                    <input type="number" name="homeWide" class="form-control" id="homeWide" placeholder="1 s/d 99++ Meter" required>
+                  </div><br>
+                  <div>
+                    <h4>Jumlah Lantai</h4>
+                    <input type="number" name="numFloors" class="form-control" id="numFloors" placeholder="1 s/d 9++" required>
+                  </div><br>
+                  <div>
+                    <h4>Tipe</h4>
+                    <select class="form-control" name="homeType">
+                      <option>- Pilih -</option>
+                      <option value="1000">Premium</option>
+                      <option value="2000">Prestige</option>
+                    </select>
+                  </div><br>
+                  <div class="text-center"><input type="submit" name="submit" value="Hitung"></div><br>
+                  <?php
+                  if(@$_POST["submit"] == "Hitung"){
+                    @$homeLong  = $_POST['homeLong'];
+                    @$homeWide  = $_POST['homeWide'];
+                    @$numFloors = $_POST['numFloors'];
+                    @$homeType  = $_POST['homeType'];
+
+                    $totalPayment = @$homeLong * @$homeWide * @$numFloors * @$homeType;
+                    echo "Total yang harus diBayar = Rp.".number_format($totalPayment,2,",",".");
+                  }
+                  ?>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2>Kontak</h2>
           <p>Subtitle</p>
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.0978308175363!2d106.89373974596265!3d-6.393906740643513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb46ac8effc3%3A0xea53a1fef4973953!2sPerumahan%20Rose%20Garden!5e0!3m2!1sid!2sid!4v1655662702464!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -604,7 +614,6 @@
 
       </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -682,10 +691,6 @@
         &copy; Copyright <strong><span>Sudut Bangun</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/butterfly-free-bootstrap-theme/ -->
         Designed by <a href="https://dioalipsaputra.github.io/portofolio/">Dio Alip Saputra</a>
       </div>
     </div>
@@ -693,15 +698,12 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
