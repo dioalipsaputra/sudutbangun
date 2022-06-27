@@ -351,6 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background: #f9f9f9;
 }
 
 .section-bg {
@@ -859,7 +860,6 @@ section {
 # calculation
 --------------------------------------------------------------*/
 .calculation {
-  margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -912,7 +912,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 .contact .info i {
   font-size: 20px;
