@@ -24,7 +24,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html"><img src="/assets/img/logo.png" alt="logo" class="img-fluid"></a>
+      <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul class="menu-right">
@@ -375,7 +375,8 @@
                     </select>
                   </div><br>
                   <div class="text-center"><button type="button" class="btn btn-primary" onclick="count();">Hitung</button></div><br>
-                  <span id="Output"></span>
+                  <span class="text-dark" id="Output"></span>
+                  <a href="#" id="OutputWA"></a>
                 </form>
               </div>
             </div>
@@ -497,7 +498,9 @@
     homeType = parseInt(document.getElementById("homeType").value);
     // Keliling = 2 * (Panjang + Lebar);
     Total = homeLong * homeWide;
-    document.getElementById("Output").innerHTML = "Rp." + Total + ",00";
+
+    document.getElementById("Output").innerHTML = "Estimasi Harga <br/>" + "Rp." + Total + ",00";
+    document.getElementById("OutputWA").innerHTML = "Yuk bangun rumah!";
   }
   </script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>

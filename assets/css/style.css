@@ -351,7 +351,6 @@ section {
   padding: 60px 0;
   overflow: hidden;
   background: #f9f9f9;
-  background-image: url("assets/img/oval.png");
 }
 
 .section-bg {
@@ -874,7 +873,7 @@ section {
 }
 .calculation .calculation-info span {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   color: #aaaaaa;
 }
