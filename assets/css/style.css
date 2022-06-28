@@ -287,7 +287,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: #f9f9f9;
 }
 #hero .container {
   padding-top: 84px;
@@ -352,10 +351,11 @@ section {
   padding: 60px 0;
   overflow: hidden;
   background: #f9f9f9;
+  background-image: url("assets/img/oval.png");
 }
 
 .section-bg {
-  background-color: #f4fbfe;
+  background-color: #f9f9f9;
 }
 
 .section-title {

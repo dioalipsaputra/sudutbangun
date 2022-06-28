@@ -352,41 +352,30 @@
           <div class="col-md-6">
             <div class="calculation">
               <div class="calculation-info">
-
-                <form class="calculation-form" method="POST">
+                <form class="calculation-form">
                   <div>
                     <h4>Panjang Rumah (meter)</h4>
-                    <input type="number" name="homeLong" class="form-control" id="homeLong" placeholder="1 s/d 99++ Meter" required>
+                    <input type="number" class="form-control" id="homeLong" placeholder="1 s/d 99++ Meter" required>
                   </div><br>
                   <div>
                     <h4>Lebar Rumah (meter)</h4>
-                    <input type="number" name="homeWide" class="form-control" id="homeWide" placeholder="1 s/d 99++ Meter" required>
+                    <input type="number" class="form-control" id="homeWide" placeholder="1 s/d 99++ Meter" required>
                   </div><br>
                   <div>
                     <h4>Jumlah Lantai</h4>
-                    <input type="number" name="numFloors" class="form-control" id="numFloors" placeholder="1 s/d 9++" required>
+                    <input type="number" class="form-control" id="numFloors" placeholder="1 s/d 9++" required>
                   </div><br>
                   <div>
                     <h4>Tipe</h4>
-                    <select class="form-control" name="homeType">
+                    <select class="form-control" id="homeType">
                       <option>- Pilih -</option>
                       <option value="500">Standar</option>
                       <option value="1000">Premium</option>
                       <option value="2000">Prestige</option>
                     </select>
                   </div><br>
-                  <div class="text-center"><input type="submit" name="submit" value="Hitung"></div><br>
-                  <?php
-                  if(@$_POST["submit"] == "Hitung"){
-                    @$homeLong  = $_POST['homeLong'];
-                    @$homeWide  = $_POST['homeWide'];
-                    @$numFloors = $_POST['numFloors'];
-                    @$homeType  = $_POST['homeType'];
-
-                    $totalPayment = @$homeLong * @$homeWide * @$numFloors * @$homeType;
-                    echo "Total yang harus diBayar = Rp.".number_format($totalPayment,2,",",".");
-                  }
-                  ?>
+                  <div class="text-center"><button type="button" class="btn btn-primary" onclick="count();">Hitung</button></div><br>
+                  <span id="Output"></span>
                 </form>
               </div>
             </div>
@@ -497,6 +486,20 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <script type="text/javascript">
+  function count()
+  {
+    var homeLong, homeWide, numFloors, homeType, Total;
+
+    homeLong = parseInt(document.getElementById("homeLong").value);
+    homeWide = parseInt(document.getElementById("homeWide").value);
+    numFloors = parseInt(document.getElementById("numFloors").value);
+    homeType = parseInt(document.getElementById("homeType").value);
+    // Keliling = 2 * (Panjang + Lebar);
+    Total = homeLong * homeWide;
+    document.getElementById("Output").innerHTML = "Rp." + Total + ",00";
+  }
+  </script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
