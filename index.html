@@ -374,9 +374,11 @@
                       <option value="2000">Prestige</option>
                     </select>
                   </div><br>
-                  <div class="text-center"><button type="button" class="btn btn-primary" onclick="count();">Hitung</button></div><br>
-                  <span class="text-dark" id="Output"></span>
-                  <a href="#" id="OutputWA"></a>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onclick="count();">Hitung</button><br><br>
+                    <span class="text-dark" id="Output"></span>
+                    <a href="#" id="OutputWA"></a>
+                  </div>
                 </form>
               </div>
             </div>
@@ -497,7 +499,7 @@
     numFloors = parseInt(document.getElementById("numFloors").value);
     homeType = parseInt(document.getElementById("homeType").value);
     // Keliling = 2 * (Panjang + Lebar);
-    Total = homeLong * homeWide;
+    Total = homeLong + homeWide + numFloors + homeType;
 
     document.getElementById("Output").innerHTML = "Estimasi Harga <br/>" + "Rp." + Total + ",00";
     document.getElementById("OutputWA").innerHTML = "Yuk bangun rumah!";
