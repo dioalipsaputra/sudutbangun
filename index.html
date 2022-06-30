@@ -24,13 +24,13 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+      <a href="index.html"><img width="100px" src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul class="menu-right">
           <li><img src="assets/img/indonesia.png" alt="flag" class="img-fluid"></li>&nbsp;
-          <li><img src="assets/img/oval.png" alt="flag" class="img-fluid"></li>&nbsp;
-          <li><img src="assets/img/oval.png" alt="flag" class="img-fluid"></li>&nbsp;
+          <li><img src="assets/img/youtube.png" alt="flag" class="img-fluid"></li>&nbsp;
+          <li><img src="assets/img/instagram.png" alt="flag" class="img-fluid"></li>&nbsp;
         </ul>
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
@@ -50,7 +50,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>BANGUN RUMAH IMPIAN ANDA</h1>
+          <div class="col-lg-6">
+            <h1>BANGUN RUMAH IMPIAN ANDA!</h1>
+          </div>
           <div><a href="#about" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -76,7 +78,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="content-custom"><br>
             <h2>Tentang</h2>
             <br>
             <h4>SUDUT BANGUN</h4>
@@ -103,7 +105,7 @@
 
           <br>
 
-          <div>
+          <div class="content-custom"><br>
             <h2>Layanan</h2>
             <br>
             <h4>SUDUT BANGUN</h4>
@@ -157,9 +159,9 @@
         <div class="row">
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2>03</h2>
-            <h1>DESAIN & BUILD</h1>
+            <h1>DESAIN & KONSTRUKSI</h1>
             <p>Rancang desain bangunan dengan arsitek dan bangun bersama tenaga ahli yang berpengalaman</p>
-            <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20build" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
+            <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20kontruksi%20desain" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
             <img src="assets/img/hero-img.png" class="img-fluid" alt="">
@@ -197,10 +199,8 @@
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Semua</li>
-              <li data-filter=".filter-desain">Desain</li>
-              <li data-filter=".filter-done">Proyek Selesai</li>
-              <li data-filter=".filter-progress">Proyek Sedang Berjalan</li>
+              <li data-filter="*" class="filter-active">Desain</li>
+              <li data-filter=".filter-desain">Kontruksi</li>
             </ul>
           </div>
         </div>
@@ -344,7 +344,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Kalkulasi</h2>
+          <h2>Asumsi biaya pembangunan</h2>
         </div>
 
         <div class="row justify-content-center">
@@ -355,15 +355,15 @@
                 <form class="calculation-form">
                   <div>
                     <h4>Panjang Rumah (meter)</h4>
-                    <input type="number" class="form-control" id="homeLong" placeholder="1 s/d 99++ Meter" required>
+                    <input type="number" class="form-control" id="homeLong" placeholder="Estimasi harga dari xxx-xxx" required>
                   </div><br>
                   <div>
                     <h4>Lebar Rumah (meter)</h4>
-                    <input type="number" class="form-control" id="homeWide" placeholder="1 s/d 99++ Meter" required>
+                    <input type="number" class="form-control" id="homeWide" placeholder="Estimasi harga dari xxx-xxx" required>
                   </div><br>
                   <div>
                     <h4>Jumlah Lantai</h4>
-                    <input type="number" class="form-control" id="numFloors" placeholder="1 s/d 9++" required>
+                    <input type="number" class="form-control" id="numFloors" placeholder="Estimasi harga dari xxx-xxx" required>
                   </div><br>
                   <div>
                     <h4>Tipe</h4>
@@ -375,7 +375,7 @@
                     </select>
                   </div><br>
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary" onclick="count();">Hitung</button><br><br>
+                    <a type="button" class="btn-get-started scrollto" onclick="count();">Hitung</a><br><br>
                     <span class="text-dark" id="Est"></span>
                     <span class="text-dark" id="Output"></span>
                     <a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20bertanya%20mengenai%20Sudut%20Bangun" id="SendWA"></a>
@@ -514,7 +514,7 @@
 
     document.getElementById("Est").innerHTML = "Estimasi Harga";
     document.getElementById("Output").innerHTML = "Rp." + rupiah + ",00";
-    document.getElementById("SendWA").innerHTML = "Yuk bangun rumah!";
+    document.getElementById("SendWA").innerHTML = "Pelajari lebih lengkap!";
   }
   </script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
