@@ -7,8 +7,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo-brand.png" rel="icon">
+  <link href="assets/img/logo-brand.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,13 +24,12 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html"><img width="100px" src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+      <a href="index.html"><img src="assets/img/logo-brand.png" alt="logo" class="img-fluid" width="50px"></a>
 
       <nav id="navbar" class="navbar">
         <ul class="menu-right">
           <li><img src="assets/img/indonesia.png" alt="flag" class="img-fluid"></li>&nbsp;
-          <li><img src="assets/img/youtube.png" alt="flag" class="img-fluid"></li>&nbsp;
-          <li><img src="assets/img/instagram.png" alt="flag" class="img-fluid"></li>&nbsp;
+          <li><img src="assets/img/font-brand.png" alt="flag" class="img-fluid" width="90px"></li>&nbsp;
         </ul>
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
@@ -56,7 +55,7 @@
           <div><a href="#about" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+          <img src="assets/img/content/render 3.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -72,8 +71,8 @@
 
           <div class="col-lg-12 col-md-12">
             <div class="gallery-item">
-              <a href="assets/img/cta-bg.jpg" class="galleery-lightbox" data-gallery="gallery-item">
-                <img src="assets/img/cta-bg.jpg" alt="" class="img-fluid">
+              <a href="assets/img/content/render 4.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="assets/img/content/render 4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -97,8 +96,8 @@
 
           <div class="col-lg-12 col-md-12">
             <div class="gallery-item">
-              <a href="assets/img/cta-bg.jpg" class="galleery-lightbox" data-gallery="gallery-item">
-                <img src="assets/img/cta-bg.jpg" alt="" class="img-fluid">
+              <a href="assets/img/content/render 4.jpg" class="galleery-lightbox" data-gallery="gallery-item">
+                <img src="assets/img/content/render 4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -128,7 +127,7 @@
             <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20desain" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+            <img src="assets/img/content/render 3.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -146,7 +145,7 @@
             <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20konstruksi" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+            <img src="assets/img/content/render 3.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -164,7 +163,7 @@
             <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20kontruksi%20desain" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+            <img src="assets/img/content/render 3.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -182,7 +181,7 @@
             <div><a href="https://api.whatsapp.com/send/?phone=6282114866014&text=Hallo%20admin,%20saya%20ingin%20konsultasi%20interior" class="btn-get-started scrollto">PELAJARI LEBIH LANJUT</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+            <img src="assets/img/content/render 3.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -367,11 +366,11 @@
                   </div><br>
                   <div>
                     <h4>Tipe</h4>
-                    <select class="form-control" id="homeType">
+                    <select class="form-control" id="homeType" onchange="myFunction()">
                       <option>- Pilih -</option>
-                      <option value="4500000">Standar</option>
-                      <option value="5000000">Premium</option>
-                      <option value="7000000">Prestige</option>
+                      <option value="std">Standar</option>
+                      <option value="pre">Premium</option>
+                      <option value="ptg">Prestige</option>
                     </select>
                   </div><br>
                   <div class="text-center">
@@ -425,7 +424,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9753348683116!2d106.89223949769404!3d-6.392046481764249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb438a90298f%3A0x11d49b83941ce86f!2s03!5e0!3m2!1sid!2sid!4v1656318272109!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
+            <!-- <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9753348683116!2d106.89223949769404!3d-6.392046481764249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb438a90298f%3A0x11d49b83941ce86f!2s03!5e0!3m2!1sid!2sid!4v1656318272109!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe> -->
 
           </div>
 
@@ -491,38 +490,59 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script type="text/javascript">
+  oV1 = {std:"4000000", pre:"4500000", ptg:"5000000"};
+  oV2 = {std:"4500000", pre:"5000000", ptg:"7000000"};
+  homeType = document.getElementById("homeType");
+
+  var tV1,tV2;
+
+  function myFunction() {
+    selected = homeType.value;
+    tV1 = oV1[selected];
+    tV2 = oV2[selected];
+  }
+
   function count()
   {
-    var homeLong, homeWide, numFloors, homeType, Total;
+    var homeLong, homeWide, numFloors, homeType, Total1, Total2;
 
     homeLong = parseInt(document.getElementById("homeLong").value);
     homeWide = parseInt(document.getElementById("homeWide").value);
     numFloors = parseInt(document.getElementById("numFloors").value);
-    homeType = parseInt(document.getElementById("homeType").value);
-    // Keliling = 2 * (Panjang + Lebar);
-    Total = homeLong * homeWide * numFloors * homeType;
 
-    var	number_string = Total.toString(),
+    Total1 = homeLong * homeWide * numFloors * tV1;
+    Total2 = homeLong * homeWide * numFloors * tV2;
+
+    var	number_string = Total1.toString(),
     sisa 	= number_string.length % 3,
-    rupiah 	= number_string.substr(0, sisa),
-    ribuan 	= number_string.substr(sisa).match(/\d{3}/g);
+    rupiah1 	= number_string.substr(0, sisa),
+    ribuan1 	= number_string.substr(sisa).match(/\d{3}/g);
 
-    if (ribuan) {
+    if (ribuan1) {
       separator = sisa ? '.' : '';
-      rupiah += separator + ribuan.join('.');
+      rupiah1 += separator + ribuan1.join('.');
+    }
+
+    var	number_string = Total2.toString(),
+    sisa 	= number_string.length % 3,
+    rupiah2 	= number_string.substr(0, sisa),
+    ribuan2 	= number_string.substr(sisa).match(/\d{3}/g);
+
+    if (ribuan2) {
+      separator = sisa ? '.' : '';
+      rupiah2 += separator + ribuan2.join('.');
     }
 
     document.getElementById("Est").innerHTML = "Estimasi Harga";
-    document.getElementById("Output").innerHTML = "Rp." + rupiah + ",00";
+    document.getElementById("Output").innerHTML = "Rp." + rupiah1 + ",00" + " - " + "Rp." + rupiah2 + ",00";
     document.getElementById("SendWA").innerHTML = "Pelajari lebih lengkap!";
   }
   </script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/js/main.js"></script>
 
 </body>
