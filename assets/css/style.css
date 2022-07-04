@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-custom h2{
   font-size: 16px;
+  font-weight: bold;
 }
 
 .content-custom h4{
@@ -52,7 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 .content-custom p{
   font-size: 16px;
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -108,13 +108,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Andale Mono", sans-serif;
 }
 #header .logo a {
-  color: #0f394c;
+  color: #000;
 }
 #header .logo img {
   max-height: 40px;
 }
 #header .menu-right {
   justify-content: flex-end;
+  margin-right: -10px;
 }
 
 /*--------------------------------------------------------------
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Andale Mono", sans-serif;
   font-size: 10px;
   font-weight: 600;
-  color: #0f394c;
+  color: #000;
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -215,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #0f394c;
+  color: #000;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -266,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #0f394c;
+  color: #000;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #e56717;
@@ -311,11 +312,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero .container {
   padding-top: 84px;
 }
+#hero .img-fluid {
+  margin-bottom: 130px;
+}
 #hero .justify-content-center h2 {
   font-size: 16px;
 }
 #hero .justify-content-center h1 {
   font-size: 32px;
+  text-align: left;
 }
 #hero .justify-content-center p {
   font-size: 16px;
@@ -324,11 +329,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 700;
   line-height: 56px;
-  color: #0f394c;
+  color: #000;
   text-transform: uppercase;
 }
 #hero h2 {
-  color: #1c698c;
+  color: #000;
   margin: 10px 0 0 0;
 }
 #hero .btn-get-started {
@@ -342,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin-top: 25px;
   color: #000;
-  border: 1px solid #e56717;
+  border: 1px solid #000;
   /* background: #e56717; */
   text-transform: uppercase;
 }
@@ -393,7 +398,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #0f394c;
+  color: #000;
 }
 .section-title p {
   margin-bottom: 0;
@@ -419,7 +424,7 @@ section {
 }
 .counts .title {
   position: relative;
-  color: #0f394c;
+  color: #000;
   margin-bottom: 40px;
 }
 .counts .title h3 {
@@ -530,7 +535,7 @@ section {
   transform: scale(1.1);
 }
 .gallery h4{
-  font-size: 20px;
+  font-size: 28px;
 }
 
 /*--------------------------------------------------------------
@@ -627,11 +632,11 @@ section {
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #0f394c;
+  color: #000;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #0f394c;
+  color: #000;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -834,7 +839,7 @@ section {
 }
 .team .member .social a {
   transition: color 0.3s;
-  color: #0f394c;
+  color: #000;
   margin: 0 3px;
   border-radius: 50px;
   width: 36px;
@@ -860,7 +865,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #0f394c;
+  color: #000;
 }
 .team .member .member-info span {
   display: block;
@@ -893,7 +898,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #0f394c;
+  color: #000;
 }
 .calculation .calculation-info span {
   display: block;
@@ -940,7 +945,7 @@ section {
   transition: 0.5s;
   margin-top: 25px;
   color: #000;
-  border: 1px solid #e56717;
+  border: 1px solid #000;
   /* background: #e56717; */
   text-transform: uppercase;
 }
@@ -972,13 +977,13 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #0f394c;
+  color: #000;
 }
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #2079a1;
+  color: #000;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
@@ -1070,6 +1075,37 @@ section {
     transform: rotate(360deg);
   }
 }
+.contact h4 {
+  font-size: 16px;
+}
+.contact .footer-links ul i {
+  padding-right: 2px;
+  color: #e56717;
+  font-size: 18px;
+  line-height: 1;
+}
+.contact ul {
+  padding-left: 0rem;
+}
+.contact .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  /* align-items: center; */
+}
+.contact .footer-links ul li:first-child {
+  padding-top: 0;
+}
+.contact .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px
+}
+.contact .footer-links ul a:hover {
+  text-decoration: none;
+  color: #e56717;
+}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1140,7 +1176,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #0f394c;
+  color: #000;
 }
 #footer .footer-newsletter form {
   margin-top: 30px;
@@ -1198,7 +1234,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #0f394c;
+  color: #000;
   position: relative;
   padding-bottom: 12px;
 }
